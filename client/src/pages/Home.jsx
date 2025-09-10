@@ -35,8 +35,8 @@ const Home = () => {
           {blogs.map((blog) => (
             <Col key={blog._id}>
               <Card className="h-100 shadow-sm border-0 blog-card" style={{ transition: 'transform 0.3s ease' }}>
+                <Card.Img variant='top' src={blog.image} />
                 <Card.Body>
-                  <Card.Img variant='top' src={blog.image} />
                   <Card.Title className="fw-semibold">{blog.title}</Card.Title>
                   <Card.Subtitle className="mb-2 text-muted small">
                     By {blog.author} &nbsp;•&nbsp; {blog.createdAt?.substring(0, 10)}
