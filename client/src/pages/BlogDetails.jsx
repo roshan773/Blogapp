@@ -49,7 +49,8 @@ const BlogDetails = () => {
     return (
         <div className="container mt-5">
             <ToastContainer />
-            <Card className="shadow p-4 rounded-4 border-0 bg-light">
+            <Card className="shadow p-4 rounded-4 border-0 bg-light d-flex justify-content-center">
+                <Card.Img variant='top' src={blog.image} />
                 <Card.Body>
                     <h2 className="mb-3 text-dark">{blog.title}</h2>
                     <h6 className="text-muted mb-4">
