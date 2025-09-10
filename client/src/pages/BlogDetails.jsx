@@ -54,7 +54,7 @@ const BlogDetails = () => {
                     <h2 className="mb-3 text-dark">{blog.title}</h2>
                     <h6 className="text-muted mb-4">
                         ✍️ by <span className="fw-semibold text-dark">{blog.author}</span> —{" "}
-                        {blog.createdAt}
+                        {blog.createdAt?.substring(0, 10)}
                     </h6>
                     <hr />
                     <p className="fs-5 text-secondary" style={{ lineHeight: "1.8" }}>
