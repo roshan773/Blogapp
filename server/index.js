@@ -10,7 +10,9 @@ app.use(cors())
 
 app.use("/api/blog/", blogRouter)
 
-
+app.get("/", (req, res) => {
+    res.send("Route is working")
+})
 
 
 
