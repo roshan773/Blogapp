@@ -16,7 +16,7 @@ const CreateBlog = () => {
   const handleSubmit = async e => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:8080/api/blog/createpost', {
+      await axios.post('https://blogapp-be-4ffj.onrender.com/api/blog/createpost', {
         ...form,
         tags: form.tags.split(',').map(tag => tag.trim()),
       });

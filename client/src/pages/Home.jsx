@@ -9,7 +9,7 @@ const Home = () => {
 
   const fetchBlogs = async () => {
     try {
-      const res = await axios.get('http://localhost:8080/api/blog/getpost');
+      const res = await axios.get('https://blogapp-be-4ffj.onrender.com/api/blog/getpost');
       if (res.data.blog.length === 0) {
         toast.info('No blogs found. Start by creating your first one!');
       }

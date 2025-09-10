@@ -17,7 +17,7 @@ const EditBlog = () => {
     useEffect(() => {
         const fetchBlog = async () => {
             try {
-                const res = await axios.get(`http://localhost:8080/api/blog/${id}`);
+                const res = await axios.get(`https://blogapp-be-4ffj.onrender.com/api/blog/${id}`);
                 const { title, author, content, tags } = res.data.blog;
                 setForm({
                     title,
