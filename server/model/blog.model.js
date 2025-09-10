@@ -21,6 +21,12 @@ const blogSchema = new mongoose.Schema({
         default: []
     },
 
+    slug: {
+        type: String,
+        unique: true,
+        required: true
+    },
+
     image: {
         type: String,
         default: "https://images.unsplash.com/photo-1432821596592-e2c18b78144f?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmxvZyUyMGNvdmVyfGVufDB8fDB8fHww"
