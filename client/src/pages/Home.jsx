@@ -38,7 +38,7 @@ const Home = () => {
                 <Card.Body>
                   <Card.Title className="fw-semibold">{blog.title}</Card.Title>
                   <Card.Subtitle className="mb-2 text-muted small">
-                    By {blog.author} &nbsp;•&nbsp; {blog.createdAt}
+                    By {blog.author} &nbsp;•&nbsp; {blog.createdAt.date.now}
                   </Card.Subtitle>
 
                   <Card.Text className="mt-3" style={{ fontSize: '0.95rem', lineHeight: '1.6' }}>
