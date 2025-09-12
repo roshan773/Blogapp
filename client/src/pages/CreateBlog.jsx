@@ -30,7 +30,7 @@ const CreateBlog = () => {
       toast.error('❌ Failed to create blog. Try again!', {
         position: 'top-center',
         autoClose: 2500,
-      });
+      }, error);
     }
   };
 

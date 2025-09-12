@@ -39,7 +39,7 @@ const EditBlog = () => {
     const handleSubmit = async e => {
         e.preventDefault();
         try {
-            await axios.put(`http://localhost:8080/api/blog/update/${id}`, {
+            await axios.put(`https://blogapp-be-4ffj.onrender.com/api/blog/update/${id}`, {
                 ...form,
                 tags: form.tags.split(',').map(tag => tag.trim())
             });
